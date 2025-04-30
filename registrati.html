@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrati - Registrazione Studenti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Registrazione Nuovo Studente</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registrati.html" class="active">Registrati</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="form-registrazione">
+            <form id="registrationForm">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <span class="error-message" id="nome-error"></span>
+                </div>
+                <div>
+                    <label for="cognome">Cognome:</label>
+                    <input type="text" id="cognome" name="cognome" required>
+                    <span class="error-message" id="cognome-error"></span>
+                </div>
+                <div>
+                    <label for="data_nascita">Data di Nascita:</label>
+                    <input type="date" id="data_nascita" name="data_nascita" required>
+                    <span class="error-message" id="data_nascita-error"></span>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div>
+                    <label for="corso">Corso di Studio:</label>
+                    <select id="corso" name="corso" required>
+                        <option value="">Seleziona un corso</option>
+                        <option value="Informatica">Informatica</option>
+                        <option value="Ingegneria">Ingegneria</option>
+                        <option value="Lettere">Lettere</option>
+                        <option value="Matematica">Matematica</option>
+                        </select>
+                    <span class="error-message" id="corso-error"></span>
+                </div>
+                <button type="submit">Registra Studente</button>
+                <div id="messaggio-registrazione" class="success-message" style="display:none;"></div>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
